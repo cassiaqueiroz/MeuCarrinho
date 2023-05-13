@@ -1,201 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="icon" href="img/logo.png">
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="img/logo.png">
+    <!-- Arquivos CSS externos -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Arquivo CSS do Bootstrap (https://getbootstrap.com/docs/5.3) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
 </head>
 
 <body>
 <section>
-  <header>
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-lg " id="nav" >
+            <div class="container-fluid" style="background-color: #e3f8ff;">
+                <!-- Logo -->
+                <a><img class="carrinho" rel="logo" src="img/logo.png" alt="Logo MeuCarrinho"></a>
+                <!-- Botão para expansão do menu em dispositivos móveis -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">Vantagens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contato.html">Fale Conosco</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cadastros
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="adquirir.html">Adquirir Sistema</a></li>
+                                <li><a class="dropdown-item" href="cliente.html">Área do Cliente</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Formulário de pesquisa -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
+                        <button type="button" class="btn btn-outline-dark" style= "margin-right: 25px; background-color: #38b7cf; color: white;" onmouseover="this.style.backgroundColor='#ff9e01'" onmouseout="this.style.backgroundColor= '#38b7cf'">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
 
-          <nav class="navbar navbar-expand-lg " id="nav" >
-          <div class="container-fluid" style="background-color: #e3f8ff;">
-              <a><img class="carrinho" rel="logo" src="img/logo.png" alt="Logo MeuCarrinho"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="index.html#produtos">Produtos</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="about.html">Quem Somos</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="about.html">Vantagens</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="contato.html">Fale Conosco</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Cadastros
-                          </a>
-                          <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="adquirir.html">Adquirir Sistema</a></li>
-                              <li><a class="dropdown-item" href="cliente.html">Área do Cliente</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-                  <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
-                      <button type="button" class="btn btn-outline-dark" style= "margin-right: 25px; background-color: #38b7cf; color: white;" onmouseover="this.style.backgroundColor='#ff9e01'" onmouseout="this.style.backgroundColor= '#38b7cf'">Buscar</button>
-                  </form>
-              </div>
-          </div>
-      </nav>
+        <div class="titulo">
+            <h2 class="bigger"><span style="color: #ff9e01;"><strong>Meu</strong></span><span style="color: #15abc6;"><strong>Carrinho</strong></span></h2>
+            <h1 class="description">Fazer compras nunca foi tão fácil</h1>
+        </div>
 
-    <div class="titulo">
-      <h2 class="bigger"><span style="color: #ff9e01;"><strong>Meu</strong></span><span style="color: #15abc6;"><strong>Carrinho</strong></span></h2>
-      <h1 class="description">Fazer compras nunca foi tão fácil</h1>
-    </div>
-
-  </header>
-    <script src="script.js"></script>
+    </header>
 </section>
 
 
-  <main id="produtos">
-      <section>
-    <div>
-      <br>
-      <div>
-        <h2><b>Produtos</b></h2>
-        <br>
-        <br>
-
-        <div class="produto">
-          <div class="imagem">
-            <img src="img/cliente.jpg" alt="imagem do produto estudo do comportamento do cliente" class="imagem">
-            <h3 class="paragrafo">Estudo do comportamento do Cliente</h3>
-            <p class="paragrafo">Analise relatórios e dados sobre o comportamentos de compra.</p>
-              <br>
-              <h4>R$ 200,00/mês</h4>
-              <br>
-          </div>
-
-          <div class="imagem">
-            <img src="img/suporte.jpg" class="imagem" alt="imagem do produto suporte técnico" >
-            <h3 class="paragrafo">Suporte Técnico</h3>
-            <p class="paragrafo">Receba nosso suporte técnico 24h e ative nosso serviço de manutenção.</p>
-              <br>
-              <h4>R$ 350,00/mês</h4>
-              <br>
-          </div>
-
-        <div class="imagem">
-            <img src="img/treinamento.jpg" alt="imagem do produto treinamento para uso do sistema" class="imagem" >
-            <h3 class="paragrafo">Treinamento para Uso do Sistema</h3>
-            <p class="paragrafo">Treine seus funcionários para utilizar o sistema MeuCarrinho.</p>
+<main id="produtos">
+    <!-- Seção de produtos -->
+    <section>
+        <div>
             <br>
-            <h4>R$ 500,00</h4>
-            <br>
-          </div>
+            <div>
+                <h2><b>Produtos</b></h2>
+                <br>
+                <br>
+
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="img/cliente.jpg" alt="imagem do produto estudo do comportamento do cliente" class="imagem">
+                        <h3 class="paragrafo">Estudo do comportamento do Cliente</h3>
+                        <p class="paragrafo">Analise relatórios e dados sobre o comportamentos de compra.</p>
+                        <br>
+                        <h4>R$ 200,00/mês</h4>
+                        <br>
+                    </div>
+
+                    <div class="imagem">
+                        <img src="img/suporte.jpg" class="imagem" alt="imagem do produto suporte técnico" >
+                        <h3 class="paragrafo">Suporte Técnico</h3>
+                        <p class="paragrafo">Receba nosso suporte técnico 24h e ative nosso serviço de manutenção.</p>
+                        <br>
+                        <h4>R$ 350,00/mês</h4>
+                        <br>
+                    </div>
+
+                    <div class="imagem">
+                        <img src="img/treinamento.jpg" alt="imagem do produto treinamento para uso do sistema" class="imagem" >
+                        <h3 class="paragrafo">Treinamento para Uso do Sistema</h3>
+                        <p class="paragrafo">Treine seus funcionários para utilizar o sistema MeuCarrinho.</p>
+                        <br>
+                        <h4>R$ 500,00</h4>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="img/carrinho.jpg" class="imagem" alt="imagem do produto carrinho de compras personalizado" >
+                        <h3 class="paragrafo">MeuCarrinho Personalizado</h3>
+                        <p class="paragrafo">Utilize uma balança sensível integrada ao seu Carrinho de compras.</p>
+                        <br>
+                        <h4>R$ 10.000</h4>
+                        <br>
+                    </div>
+
+                    <div class="imagem">
+                        <img src="img/app.jpg" alt="imagem do produto aplicativo" class="imagem" >
+                        <h3 class="paragrafo">Aplicativo MeuCarrinho</h3>
+                        <p class="paragrafo">Seus clientes podem gerenciar compras com o nosso aplicativo.</p>
+                        <br>
+                        <h4>R$ 79,90/mês</h4>
+                        <br>
+                    </div>
+
+                    <div class="imagem">
+                        <img src="img/tablet.jpg" alt="imagem do produto tablet" class="imagem" >
+                        <h3 class="paragrafo">Tablet</h3>
+                        <p class="paragrafo">Saiba o preço do produto por meio do nosso tablet leitor de códigos de barras.</p>
+                        <br>
+                        <h4>R$ 1.259,49</h4>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="produto">
+                    <div class="imagem">
+                        <img src="img/sistema.jpg" alt="imagem do produto instalação do sistema" class="imagem" >
+                        <h3 class="paragrafo">Instalação do Sistema MeuCarrinho</h3>
+                        <p class="paragrafo">Configure o sistema MeuCarrinho de acordo com o cliente.</p>
+                        <br>
+                        <h4>R$ 4.000,00</h4>
+                        <br>
+                    </div>
+
+                    <div class="imagem">
+                        <img src="img/integracao.jpg" alt="imagem do produto integração de sistemas" class="imagem" >
+                        <h3 class="paragrafo">Integração de Sistemas</h3>
+                        <p class="paragrafo">Conecte o sistema MeuCarrinho ao sistema de seu cliente.</p>
+                        <br>
+                        <h4>R$ 5.000,000</h4>
+                        <br>
+                    </div>
+
+                    <div class="imagem">
+                        <img src="img/estoque.jpg" alt="imagem do produto gerenciamento de estoque" class="imagem" >
+                        <h3 class="paragrafo">Gerenciamento de Estoque</h3>
+                        <p class="paragrafo">Gerencie produtos de todas as filiais da sua empresa.</p>
+                        <br>
+                        <h4>R$ 3.500,00/projeto</h4>
+                        <br>
+                    </div>
+                </div>
+                <div class="imagem">
+                    <img src="img/seguranca.jpg" alt="imagem do produto segurança de dados" class="imagem" >
+                    <h3 class="paragrafo">Segurança de Dados</h3>
+                    <p class="paragrafo">Garanta que suas informações se mantenham protegidas.</p>
+                    <br>
+                    <h4>R$ 6.500,00</h4>
+                    <br>
+                </div>
+            </div>
+            <br >
+            <br >
         </div>
-
-        <div class="produto">
-        <div class="imagem">
-            <img src="img/carrinho.jpg" class="imagem" alt="imagem do produto carrinho de compras personalizado" >
-            <h3 class="paragrafo">MeuCarrinho Personalizado</h3>
-            <p class="paragrafo">Utilize uma balança sensível integrada ao seu Carrinho de compras.</p>
-            <br>
-            <h4>R$ 10.000</h4>
-            <br>
-          </div>
-
-        <div class="imagem">
-            <img src="img/app.jpg" alt="imagem do produto aplicativo" class="imagem" >
-            <h3 class="paragrafo">Aplicativo MeuCarrinho</h3>
-            <p class="paragrafo">Seus clientes podem gerenciar compras com o nosso aplicativo.</p>
-            <br>
-            <h4>R$ 79,90/mês</h4>
-            <br>
-          </div>
-
-          <div class="imagem">
-            <img src="img/tablet.jpg" alt="imagem do produto tablet" class="imagem" >
-            <h3 class="paragrafo">Tablet</h3>
-            <p class="paragrafo">Saiba o preço do produto por meio do nosso tablet leitor de códigos de barras.</p>
-              <br>
-              <h4>R$ 1.259,49</h4>
-              <br>
-          </div>
-        </div>
-
-        <div class="produto">
-         <div class="imagem">
-            <img src="img/sistema.jpg" alt="imagem do produto instalação do sistema" class="imagem" >
-            <h3 class="paragrafo">Instalação do Sistema MeuCarrinho</h3>
-            <p class="paragrafo">Configure o sistema MeuCarrinho de acordo com o cliente.</p>
-             <br>
-             <h4>R$ 4.000,00</h4>
-             <br>
-          </div>
-
-          <div class="imagem">
-            <img src="img/integracao.jpg" alt="imagem do produto integração de sistemas" class="imagem" >
-            <h3 class="paragrafo">Integração de Sistemas</h3>
-            <p class="paragrafo">Conecte o sistema MeuCarrinho ao sistema de seu cliente.</p>
-            <br>
-            <h4>R$ 5.000,000</h4>
-            <br>
-          </div>
-
-        <div class="imagem">
-            <img src="img/estoque.jpg" alt="imagem do produto gerenciamento de estoque" class="imagem" >
-            <h3 class="paragrafo">Gerenciamento de Estoque</h3>
-            <p class="paragrafo">Gerencie produtos de todas as filiais da sua empresa.</p>
-            <br>
-            <h4>R$ 3.500,00/projeto</h4>
-            <br>
-          </div>
-        </div>
-        <div class="imagem">
-            <img src="img/seguranca.jpg" alt="imagem do produto segurança de dados" class="imagem" >
-            <h3 class="paragrafo">Segurança de Dados</h3>
-            <p class="paragrafo">Garanta que suas informações se mantenham protegidas.</p>
-            <br>
-            <h4>R$ 6.500,00</h4>
-            <br>
-          </div>
-        </div>
-        <br >
-        <br >
-      </div>
-      </section>
-  </main>
-
+    </section>
+</main>
 
 <footer class="footer">
+    <!-- Links para redes sociais -->
     <div>
         <a href="https://twitter.com/soulcodeacademy?lang=es" target="_blank"> <img class="rodape"
-                                                                                          src="img/twitter.png"
-                                                                                          alt="Imagem do Ícone do Twitter"></a>
+                                                                                    src="img/twitter.png"
+                                                                                    alt="Imagem do Ícone do Twitter"></a>
         <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"><img class="rodape"
-                                                                                        src="img/linkedin.png"
-                                                                                        alt="Imagem de Ícone do LinkedIn"></a>
+                                                                                         src="img/linkedin.png"
+                                                                                         alt="Imagem de Ícone do LinkedIn"></a>
         <a href="https://www.instagram.com/soulcodeacademy/?hl=es" target="_blank"> <img class="rodape"
-                                                                      src="img/instagram.png"
-                                                                      alt="Imagem de Ícone do Instagram"></a>
+                                                                                         src="img/instagram.png"
+                                                                                         alt="Imagem de Ícone do Instagram"></a>
         <a href="mailto:orgfinaltcc2@gmail.com" target="_blank"> <img class="rodape"
                                                                       src="img/email.avif"
                                                                       alt="Imagem de Ícone do Email"></a>
     </div>
     <div>
-       <p class="pf">MeuCarrinho &copy; 2023.</p><br>
+        <p class="pf">MeuCarrinho &copy; 2023.</p><br>
     </div>
 </footer>
+<!-- Arquivos JavaScript externo e do Bootstrap -->
+<script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

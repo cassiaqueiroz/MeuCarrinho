@@ -7,16 +7,12 @@
   <title>Adquirir Sistema</title>
   <link rel="icon" href="img/logo.png" />
   <link href="web.to.lead.css" rel="stylesheet" type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
 </head>
 
-<body >
-
+<body>
 <header>
-
-
-    <nav class="navbar navbar-expand-lg" id="nav">
+  <nav class="navbar navbar-expand-lg" id="nav">
     <div class="container-fluid" style="background-color: #e3f8ff;">
       <a><img class="carrinho" rel="logo" src="img/logo.png" alt="Logo MeuCarrinho" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,13 +46,20 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search">
-          <button type="button" class="btn btn-outline-dark" style= "margin-right: 25px; background-color: #38b7cf; color: white;" onmouseover="this.style.backgroundColor='#ff9e01'" onmouseout="this.style.backgroundColor= '#38b7cf'">Buscar</button>
+          <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Search" />
+          <button
+                  type="button"
+                  class="btn btn-outline-dark"
+                  style="margin-right: 25px; background-color: #38b7cf; color: white;"
+                  onmouseover="this.style.backgroundColor='#ff9e01'"
+                  onmouseout="this.style.backgroundColor= '#38b7cf'"
+          >
+            Buscar
+          </button>
         </form>
       </div>
     </div>
   </nav>
-
 </header>
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
@@ -64,15 +67,13 @@
 <!--  de caracteres de sua página HTML.                                       -->
 <!--  ----------------------------------------------------------------------  -->
 
-
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
 <!--  ----------------------------------------------------------------------  -->
 
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-
-  <input type=hidden name="oid" value="00DDo000001Cpn9">
-  <input type=hidden name="retURL" value="https://login.salesforce.com/?locale=br">
+  <input type="hidden" name="oid" value="00DDo000001Cpn9" />
+  <input type="hidden" name="retURL" value="https://login.salesforce.com/?locale=br" />
 
   <!--  ----------------------------------------------------------------------  -->
   <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
@@ -82,12 +83,10 @@
   <!--  value="orgfinaltcc2@gmail.com">                                         -->
   <!--  ----------------------------------------------------------------------  -->
   <!-- <div>
-      <img src="novo.png" alt="">
-  </div> -->
-
+<img src="novo.png" alt="">
+</div> -->
 
   <main>
-
     <div class="forms">
       <div class="title">
         <h2>
@@ -120,8 +119,9 @@
         <input id="city" class="input_box_center" maxlength="40" name="city" size="20" type="text" required />
       </div>
 
-      <div class="info" style="">Estado:
-        <select  id="00NDo000007EacJ" class="input_box_center" name="00NDo000007EacJ" title="Estado">
+      <div class="info" style="">
+        Estado:
+        <select id="00NDo000007EacJ" class="input_box_center" name="00NDo000007EacJ" title="Estado">
           <option value="">-- Nenhum --</option>
           <option value="AC">AC</option>
           <option value="AL">AL</option>
@@ -150,59 +150,44 @@
           <option value="SP">SP</option>
           <option value="SE">SE</option>
           <option value="TO">TO</option>
-        </select><br>
+        </select>
+        <br />
       </div>
 
-  <br>
+      <br />
       <div class="info">
         <label for="company">Empresa</label>
         <input id="company" class="input_box_center" maxlength="40" name="company" size="20" type="text" required />
       </div>
-      <br>
+      <br />
       <div class="info">
         <div id="enviar">
-          <input type="submit" id="submit" name="submit" onclick="validar()">
+          <input type="submit" id="submit" name="submit" onclick="validar()" />
         </div>
-        <br>
+        <br />
       </div>
-
     </div>
-
   </main>
 </form>
 
 <footer class="footer">
   <div>
-    <a href="https://twitter.com/soulcodeacademy?lang=es" target="_blank"> <img class="rodape"
-                                                                                src="img/twitter.png"
-                                                                                alt="Imagem do Ícone do Twitter"></a>
-    <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"><img class="rodape"
-                                                                                     src="img/linkedin.png"
-                                                                                     alt="Imagem de Ícone do LinkedIn"></a>
-    <a href="https://www.instagram.com/soulcodeacademy/?hl=es" target="_blank"> <img class="rodape"
-                                                                                     src="img/instagram.png"
-                                                                                     alt="Imagem de Ícone do Instagram"></a>
-    <a href="mailto:orgfinaltcc2@gmail.com" target="_blank"> <img class="rodape"
-                                                                  src="img/email.avif"
-                                                                  alt="Imagem de Ícone do Email"></a>
+    <a href="https://twitter.com/soulcodeacademy?lang=es" target="_blank"> <img class="rodape" src="img/twitter.png" alt="Imagem do Ícone do Twitter" /></a>
+
+    <a href="https://www.linkedin.com/company/soulcodeacademy/" target="_blank"><img class="rodape" src="img/linkedin.png" alt="Imagem de Ícone do LinkedIn" /></a>
+
+    <a href="https://www.instagram.com/soulcodeacademy/?hl=es" target="_blank"> <img class="rodape" src="img/instagram.png" alt="Imagem de Ícone do Instagram" /></a>
+
+    <a href="mailto:orgfinaltcc2@gmail.com" target="_blank"> <img class="rodape" src="img/email.avif" alt="Imagem de Ícone do Email" /></a>
   </div>
   <div>
-
-    <p class="pf">MeuCarrinho &copy; 2023.</p><br>
+    <p class="pf">MeuCarrinho &copy; 2023.</p>
+    <br />
   </div>
 </footer>
 
+<script src="script.js"></script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
-
-<script src="script.js">
-
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-</script>
-
-
-
 </html>

@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 * {
+     font-family: 'Red Hat Display', sans-serif;
      box-sizing: border-box;
      margin: 0;
      padding: 0;
@@ -181,7 +183,7 @@
 }
  @media (min-width: 300px) and (max-width: 900px) {
      .imagem {
-         transition-duration: 0.3s;
+         transition-duration: 0.4s;
     }
      .imagem:hover {
          transform: scale(1.1);

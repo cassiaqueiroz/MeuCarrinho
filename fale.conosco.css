@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+     font-family: 'Red Hat Display', sans-serif;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+ body{
+     background-color: white;
+     background-size: cover;
+     width: 100%;
+     height: auto;
+}
+ #nav {
+     background-color: #E0F7FF;
+     z-index: 0;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+}
+ main{
+     width: 40%;
+     margin: 0 auto;
+     margin-top: 130px;
+     margin-bottom: 100px;
+     box-shadow: 1px 1px 3px rgb(203, 230, 255);
+     border-radius: 10px;
+     background: #e3f8ff;
+     box-shadow: 1px 1px 1px black;
+     padding-top: 15px;
+}
+ .forms {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     margin: 5px 20px 5px 20px;
+}
+ label {
+     display: block;
+     margin-bottom: 5px;
+}
+ input{
+     margin-top: 10px;
+     display: block;
+     margin-bottom: 5px;
+}
+ input[type=text], select,textarea {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     box-sizing: border-box;
+}
+ input[type=submit] {
+     color: #ffffff;
+     background-color:#15ABC6;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+ #reason{
+     border: 1px solid #ccc;
+}
+ input[type=submit]:hover {
+     background-color:#FF9E01;
+}
+ #submit {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+     border: 1px solid black;
+}
+ footer {
+     width: 100%;
+     height: auto;
+     text-align: center;
+     align-items: center;
+     align-content: center;
+     background-color: #E0F7FF;
+     opacity: 0.9;
+     font-size: 18px;
+     border-radius: 5px;
+}
+ .footer {
+     text-align: center;
+     font-size: 16px;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     display: inline-block;
+     color: #011427;
+     width: 100%;
+     height: auto;
+}
+ .rodape {
+     width: 40px;
+     margin: 16px 1.5px 5px 0px;
+     padding: 7px;
+     height: auto;
+}
+ .rodape:hover {
+     opacity: 0.4;
+     transition: 0.5s ease;
+}
+ .pf {
+     padding: 15px;
+     margin: -10px;
+}
+ @media (min-width: 300px) and (max-width: 900px) {
+     main{
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         align-content: center;
+         text-align: center;
+    }
+}
+ .carrinho {
+     width: 50px;
+     height: auto;
+}
